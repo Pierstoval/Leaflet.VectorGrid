@@ -4,7 +4,7 @@ import * as topojson from "topojson-client";
 var slicers = {};
 var options;
 
-onmessage = function (e) {
+export default onmessage = function (e) {
 	if (e.data[0] === 'slice') {
 		// Given a blob of GeoJSON and some topojson/geojson-vt options, do the slicing.
 		var geojson = e.data[1];

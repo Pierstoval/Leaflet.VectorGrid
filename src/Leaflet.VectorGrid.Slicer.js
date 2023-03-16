@@ -3,7 +3,7 @@
 // This import statement depends on rollup-file-as-blob, so that the
 // variable 'workerCode' is a blob URL.
 
-import workerCode from './slicerWebWorker.js.worker';
+import workerCode from './slicerWebWorker.js?worker&inline';
 
 /*
  * 🍂class VectorGrid.Slicer
@@ -108,4 +108,3 @@ L.VectorGrid.Slicer = L.VectorGrid.extend({
 L.vectorGrid.slicer = function (geojson, options) {
 	return new L.VectorGrid.Slicer(geojson, options);
 };
-

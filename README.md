@@ -37,7 +37,7 @@ The difference is that `dist/Leaflet.VectorGrid.bundled.js` includes all of `Vec
 
 If you don't want to deal with `npm` and local files, you can use `unpkg.com` instead:
 
-```
+```[gobblefile.js](gobblefile.js)
 <script src="https://unpkg.com/leaflet.vectorgrid@latest/dist/Leaflet.VectorGrid.bundled.js"></script>
 ```
 or, with the same caveats about bundled dependencies:
@@ -94,4 +94,3 @@ can do whatever you want with this stuff. If we meet some day, and you think
 this stuff is worth it, you can buy me a beer in return.
 
 ----------------------------------------------------------------------------
-
