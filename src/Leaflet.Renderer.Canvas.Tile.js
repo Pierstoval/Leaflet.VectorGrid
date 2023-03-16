@@ -53,6 +53,9 @@ L.Canvas.Tile = L.Canvas.extend({
 		}
 		if (clickedLayer)  {
 			L.DomEvent.fakeStop(e);
+			if (!layer.getLatLng()) {
+				layer.setLatLng(this._map.unproject(point));
+			}
 			this._fireEvent([clickedLayer], e);
 		}
 	},
@@ -95,4 +98,3 @@ L.Canvas.Tile = L.Canvas.extend({
 L.canvas.tile = function(tileCoord, tileSize, opts){
 	return new L.Canvas.Tile(tileCoord, tileSize, opts);
 }
-
